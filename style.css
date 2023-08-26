@@ -158,14 +158,20 @@ nav ul li a img:hover{
 }
 /*section contanct*/
 .section-contact{
-    right: 0;
-    width: 500px;
+    right: -15px;
+    width: 510px;
     position: absolute;
     height: 100vh;
     border: 1px solid #fff;
     margin-top: -453px;
     background: #fafafa10;
     backdrop-filter: blur(0.4rem);
+    transition: 1s ease;
+}
+
+.section-contact:active{
+    transition: 1s;
+    transform: scale(0.9);
 }
 /*Section SOBRE MI*/
 .content-sobre-mi{
