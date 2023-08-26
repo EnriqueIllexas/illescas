@@ -370,81 +370,26 @@ nav ul li a img:hover{
     background-attachment: fixed;
     object-fit: cover;
 }
-
-.contenedor-herramientas{
-    display: flex;
-    justify-content: center;
-    padding-top: 100px;
-   
-}
-.herramientas{
-    margin: 20px;
-    border: 1px solid var(--white);
-    box-shadow: 0px 4px 8px 0px;
-    color: #fff;
-    padding: 10px;
-    border-radius: 15px;
-}
-.herramientas img{
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-}
-.herramientas h2{
-    text-align: center;
-    font-size: 20px;
-    font-weight: 700;
-}
-.herramientas a{
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-}
-.herramientas:hover img {
-    filter: drop-shadow(2px 4px 6px rgb(31, 84, 206));
-}
-
-.contenedor-herramientas h1{
-    color: white;
-    font-size: 60px;
-    justify-content: center;
-    text-align: center;
-    margin: 80px;
-    border-bottom: 5px solid #fff;
-    transition: 0.5s ease;
-}
-
-.contenedor-herramientas h1:hover{
-    transform: rotate(0.5turn);
-    transition: 2.1s;
-    color: transparent;
-    border-bottom: 5px solid transparent;
-}
 /*Section proyectos*/
 .container-proyectos{
-    display: flex;
-    flex-direction: column;
-    flex: auto;
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(
+        440px
+        , 1fr
+        )
+    );
+    gap: 10px;
     justify-content: center;
-    background: #e6e1e1;
-    align-items: center;
-    width: 99.8vw;
+    place-items: center;
+    
 }
 .container-proyectos h1{
     font-size: 46px;
     text-align: center;
     margin: 20px 10px 10px 10px;
     color: #302d2d;
-}
-.proyectos--1{
-    display: flex;
-    flex: 0 auto;
-    overflow:hidden;
-}
-.proyectos--2{
-    display: flex;
-    flex: 0 auto;
-    overflow:hidden;
 }
 .contenedor--proyectos{
     margin-top: 20px;
@@ -453,14 +398,9 @@ nav ul li a img:hover{
 }
 .container-proyectos img{
     width: 400px;
-    height: 500px;
+    height: 400px;
     border-radius: 10px;
     transition: 0.8s ease;
-}
-.container-proyectos--3 img{
-    width: 300px;
-    height: 400px;
-    object-fit: cover;
 }
 .container-proyectos p{
     font-size: 16px;
