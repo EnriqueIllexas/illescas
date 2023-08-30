@@ -245,15 +245,34 @@ nav ul li a img:hover{
     transform: scale(0.9);
 }
 /*Section SOBRE MI*/
+
+#section-sobre-mi{
+    width: 1000px;
+}
 .content-sobre-mi{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
     padding: 10px;
-    width: 100vw;
-    height: 100vh;
+    width: 1000px;
+    height: 80vh;
+    transition: 0.4s ease;
+
 }
+@media (max-width:600px) {
+    .content-sobre-mi{
+        display: flex;
+        flex-direction: column;
+        transition: 0.4s;
+    }
+    .content-sobre-mi--img{
+        display: none;
+    }
+    .content-sobre-mi--title{
+        width: 700px !important;
+        height: 440px !important;
+    }
+ }
 .sobre-mi--title-h1{
     position: relative;
     font-size: 55px;
@@ -346,6 +365,12 @@ nav ul li a img:hover{
     margin: 40px 80px 20px 80px;
     justify-content: center;
 }
+@media (max-width:600px) {
+    .content-skills{
+        padding: 30px;
+        margin-left: 35px;
+    } 
+ }
 .content-skills p{
     font-size: 15px;
     font-weight: bold;
@@ -420,37 +445,20 @@ nav ul li a img:hover{
     0%{width: 0;}
     100%{width: 44%;}
 }
-.button-skills{
-    position: absolute;
-    background-color: var(--white);
-    margin-top: -35px;
-    padding: 20px 100px;
-    font-size: 20px;
-    font-weight: bold;
-    transition: 1s ease;
-    font-family: 'Signika Negative', sans-serif;
-    border: none;
-    box-shadow: 0px 4px 8px 0px;
-    left: calc(50% - 118.5px); /*centra UN BOTON */
-}
-.button-skills:hover{
-    background-color: #fff;
-    color: #000;
-    border: 1px solid #000;
-    transform: scale(1.1);
-    transition: 0.3s;
-    cursor: pointer;
-    
-}
 /*Section-herramientas*/
 .content-herramientas--hero{
     height: 100vh;
-    width: 99.8vw;
+    width: 1000px;
     background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6)),url(https://images.pexels.com/photos/326508/pexels-photo-326508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-size: cover;
     background-attachment: fixed;
     object-fit: cover;
 }
+@media (max-width:600px) {
+    .content-herramientas--hero{
+        width: 1000px;
+    }
+ }
 /*Section proyectos*/
 .container-proyectos{
     display: grid;
