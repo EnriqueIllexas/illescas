@@ -21,7 +21,7 @@ html{
 }
 .hero{
     height: 100vh;
-    width: 98.9vw;
+    width: 1000px;
     background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6)),url(https://images.pexels.com/photos/115655/pexels-photo-115655.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-size: cover;
     background-attachment: fixed;
